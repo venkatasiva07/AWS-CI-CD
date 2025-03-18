@@ -1,5 +1,6 @@
 # Base image
-FROM python:3.8
+# Use AWS ECR Public instead of Docker Hub
+FROM public.ecr.aws/docker/library/python:3.8
 
 # Set the working directory inside the container
 WORKDIR /app
